@@ -1,0 +1,353 @@
+WavFlow
+Copyright (c) Meta Platforms, Inc. and affiliates.
+
+The majority of WavFlow is licensed under the Creative Commons
+Attribution-NonCommercial 4.0 International License (CC-BY-NC 4.0).
+A copy of that license is included in the LICENSE file at the root of
+this source tree, and is also available at:
+
+    https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+However, portions of the project are derived from third-party open
+source software and are available under separate license terms. The
+following components retain their original upstream licenses; the
+copyright notices and disclaimers in the third-party source files are
+preserved as required.
+
+================================================================================
+1. MMAudio
+================================================================================
+
+Files:
+    feature_extract/ext/features_utils.py
+        (adapted from MMAudio's mmaudio/ext/features_utils.py)
+    wavflow/model/networks.py
+    wavflow/model/embeddings.py
+    wavflow/model/transformer_layers.py
+    wavflow/model/low_level.py
+    wavflow/model/rotary_embeddings.py
+        (model backbone adapted from MMAudio's mmaudio/model/*)
+
+Upstream project:
+    https://github.com/hkchengrex/MMAudio
+
+License: MIT License
+
+    MIT License
+
+    Copyright (c) 2024 Ho Kei Cheng
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+================================================================================
+2. JiT (Just Image Transformer)
+================================================================================
+
+Files:
+    wavflow/model/flow_matching.py
+        (flow matching loss / sampler adapted from JiT)
+
+Upstream project:
+    https://github.com/LTH14/JiT
+
+License: MIT License
+
+    MIT License
+
+    Copyright (c) 2024 Tianhong Li
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+================================================================================
+3. Synchformer
+================================================================================
+
+Files:
+    feature_extract/ext/synchformer/__init__.py
+    feature_extract/ext/synchformer/synchformer.py
+    feature_extract/ext/synchformer/motionformer.py
+    feature_extract/ext/synchformer/utils.py
+
+Upstream project:
+    https://github.com/v-iashin/Synchformer
+
+License: MIT License
+
+    MIT License
+
+    Copyright (c) 2024 Vladimir Iashin
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+================================================================================
+4. Motionformer
+================================================================================
+
+Files:
+    feature_extract/ext/synchformer/video_model_builder.py
+    feature_extract/ext/synchformer/vit_helper.py
+    feature_extract/ext/synchformer/divided_224_16x4.yaml
+    (and Motionformer-derived portions of motionformer.py)
+
+Upstream project:
+    https://github.com/facebookresearch/Motionformer
+
+License: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+    Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
+
+    This work is licensed under the Creative Commons
+    Attribution-NonCommercial 4.0 International License. To view a copy of
+    this license, visit https://creativecommons.org/licenses/by-nc/4.0/ or
+    send a letter to Creative Commons, PO Box 1866, Mountain View, CA
+    94042, USA.
+
+================================================================================
+5. DiT (Diffusion Transformer)
+================================================================================
+
+Portions of:
+    wavflow/model/networks.py
+    wavflow/model/embeddings.py
+
+Upstream project:
+    https://github.com/facebookresearch/DiT
+
+License: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+
+    Copyright (c) Meta Platforms, Inc. and affiliates. All Rights Reserved.
+
+    This work is licensed under the Creative Commons
+    Attribution-NonCommercial 4.0 International License. To view a copy of
+    this license, visit https://creativecommons.org/licenses/by-nc/4.0/ or
+    send a letter to Creative Commons, PO Box 1866, Mountain View, CA
+    94042, USA.
+
+================================================================================
+6. Stability AI SD3 Reference Implementation
+================================================================================
+
+Portions of:
+    wavflow/model/low_level.py
+
+Upstream project:
+    https://github.com/Stability-AI/sd3-ref
+
+License: Stability AI Community License Agreement
+
+    Copyright (c) Stability AI Ltd. All Rights Reserved.
+
+    Licensed under the Stability AI Community License Agreement. The full
+    license text is available at:
+        https://stability.ai/license
+    Use of this software is permitted for non-commercial research and
+    evaluation; commercial use requires a separate Stability AI commercial
+    license. WavFlow is distributed under CC-BY-NC 4.0 (non-commercial use
+    only), which is consistent with the Community License's NonCommercial
+    permissions.
+
+================================================================================
+7. pytorch-image-models (timm)
+================================================================================
+
+Portions of:
+    feature_extract/ext/synchformer/video_model_builder.py
+    feature_extract/ext/synchformer/vit_helper.py
+
+Upstream project:
+    https://github.com/huggingface/pytorch-image-models
+
+License: Apache License, Version 2.0
+
+    Copyright 2020 Ross Wightman
+
+    Licensed under the Apache License, Version 2.0 (the "License"); you may
+    not use this file except in compliance with the License. You may obtain
+    a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+================================================================================
+8. black-forest-labs/flux
+================================================================================
+
+Portions of:
+    wavflow/model/rotary_embeddings.py
+
+Upstream project:
+    https://github.com/black-forest-labs/flux
+
+License: Apache License, Version 2.0
+
+    Copyright 2024 Black Forest Labs.
+
+    Licensed under the Apache License, Version 2.0 (the "License"); you may
+    not use this file except in compliance with the License. You may obtain
+    a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+================================================================================
+9. lucidrains/rotary-embedding-torch
+================================================================================
+
+Portions of:
+    wavflow/model/rotary_embeddings.py
+
+Upstream project:
+    https://github.com/lucidrains/rotary-embedding-torch
+
+License: MIT License
+
+    MIT License
+
+    Copyright (c) 2021 Phil Wang
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED.
+
+================================================================================
+10. openai/glide-text2im
+================================================================================
+
+Portions of:
+    wavflow/model/embeddings.py
+
+Upstream project:
+    https://github.com/openai/glide-text2im
+
+License: MIT License
+
+    MIT License
+
+    Copyright (c) 2021 OpenAI
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED.
+
+================================================================================
+11. gle-bellier/flow-matching
+================================================================================
+
+Portions of:
+    wavflow/model/flow_matching.py
+
+Upstream project:
+    https://github.com/gle-bellier/flow-matching
+
+License: MIT License
+
+    MIT License
+
+    Copyright (c) Grégoire Le Bellier
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED.
+
+================================================================================
+Notes
+================================================================================
+
+* If additional third-party code is later added to WavFlow, this NOTICE.txt
+  file will be updated to reflect the new component and its license.
+* Components that are dependencies (declared in `requirements.txt` /
+  `pyproject.toml`) and pulled in via `pip` are NOT vendored and
+  therefore are not enumerated here. Their licenses are governed by
+  their respective upstream distributions.
+* Two of the listed upstream components are licensed under terms more
+  restrictive than the typical permissive (MIT / Apache 2.0) baseline:
+    - facebookresearch/DiT (CC BY-NC 4.0)
+    - facebookresearch/Motionformer (CC BY-NC 4.0)
+    - Stability-AI/sd3-ref (Stability AI Community License)
+  WavFlow is itself distributed under CC-BY-NC 4.0, which is compatible
+  with the NonCommercial restrictions of these upstream components.

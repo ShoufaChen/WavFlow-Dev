@@ -1,0 +1,2 @@
+id,audio_path,features_path,video_exist,text_exist
+sample1,training_samples/wav/sample1.wav,training_samples/features/vt2a/sample1.pth,1,1

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Buck (don't ship Meta-internal build files)
+BUCK
+TARGETS
+TARGETS.v2
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Project artifacts that should NOT be checked in
+output/                       # training checkpoints, logs, generated samples
+training_samples/features/    # locally extracted .pth feature files (regenerate via feature_extract)
+
+# Optional: skip generated wavs from infer
+# output/infer/
