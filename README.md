@@ -165,14 +165,11 @@ For feature extraction and training (single-node and multi-node), see **[TRAININ
 ## Citation
 
 ```bibtex
-@misc{zhou2026wavflowaudiogenerationwaveform,
-      title={WavFlow: Audio Generation in Waveform Space}, 
-      author={Feiyan Zhou and Luyuan Wang and Shoufa Chen and Zhe Wang and Zhiheng Liu and Yuren Cong and Xiaohui Zhang and Fanny Yang and Belinda Zeng},
-      year={2026},
-      eprint={2605.18749},
-      archivePrefix={arXiv},
-      primaryClass={cs.SD},
-      url={https://arxiv.org/abs/2605.18749}, 
+@article{zhou2026wavflow,
+  title={WavFlow: Audio Generation in Waveform Space},
+  author={Zhou, Feiyan and Wang, Luyuan and Chen, Shoufa and Wang, Zhe and Liu, Zhiheng and Cong, Yuren and Zhang, Xiaohui and Yang, Fanny and Zeng, Belinda},
+  journal={arXiv preprint arXiv:2605.18749},
+  year={2026}
 }
 ```
 
